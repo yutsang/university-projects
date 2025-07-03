@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> IEDA 3300 Mini Project by TSANG Yu </title>
+</head>
+<body bgcolor=#DDDDDD>
+<p>
+<!-- The lines above are the standard html header -->
+
+<h2><font color=blue>
+IEDA 3300 Mini Project by TSANG Yu 20705565
+</h2> </font>
+<p>
+<hr>
+<h3>Task List</h3>
+<!-- Normal mode. (a) Comment out the DEBUG mode above (ii) Replace USER-LOGIN (iii) replace CGI-FILENAME -->
+<form method=POST action="http://ytsang.student.ust.hk/ieda3300/cgi-bin/mini-project-create.php">  
+    <b>1. Create Project:</b>
+        <button name="action" type="submit" value=0> Create </button>                
+    <p></form>
+
+<form method=POST action="http://ytsang.student.ust.hk/ieda3300/cgi-bin/mini-project-deactivate.php">  
+    <b>2. Deactivate Project:</b>
+        <button name="action" type="submit" value=1> Deactivate </button>                
+    <p></form>
+
+<form method=POST action="http://ytsang.student.ust.hk/ieda3300/cgi-bin/mini-project-update.php">  
+    <b>3.  Update Worker Information for a Project:</b>
+        <button name="action" type="submit" value=2> Update </button>                
+    <p></form>
+
+<form method=POST action="http://ytsang.student.ust.hk/ieda3300/cgi-bin/mini-project-summary.php">  
+    <b>4. Project Summary Report:</b>
+        <button name="action" type="submit" value=3> Summary </button>                
+    <p></form>
+  <hr>
+
+<!-- The lines below are a standard html footer -->
+<p>
+</body>
+</html>

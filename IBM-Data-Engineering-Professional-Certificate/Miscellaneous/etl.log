@@ -1,0 +1,7 @@
+INFO:root:ETL Job Started
+INFO:root:Extract phase Started
+INFO:root:Extract phase Ended
+INFO:root:Transform phase Started
+INFO:root:Transform phase Ended
+INFO:root:Load phase Started
+INFO:root:Load phase Ended
