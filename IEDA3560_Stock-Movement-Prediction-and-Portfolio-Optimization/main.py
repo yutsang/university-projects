@@ -16,6 +16,7 @@ from pypfopt import black_litterman, objective_functions
 from pypfopt.black_litterman import BlackLittermanModel
 from pypfopt.efficient_frontier import EfficientFrontier
 
+INPUT_DIR = 'input'
 REQUIRED_FILES = {
     'S&P500.csv': 'https://drive.google.com/uc?export=download&id=1qLoKEZHEjqvjgBB1CFX62oh7IGJptAk7',
     'market_cap.csv': 'https://drive.google.com/uc?export=download&id=1YZmaQNzgpkj-DHbyFUhzzSDXKajabViF',
@@ -25,9 +26,12 @@ REQUIRED_FILES = {
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
 
 def check_and_warn_files():
+    if not os.path.isdir(INPUT_DIR):
+        raise FileNotFoundError(f"Input directory '{INPUT_DIR}' not found. Please create it and add the required CSV files.")
     for fname, url in REQUIRED_FILES.items():
-        if not os.path.exists(fname):
-            logging.warning(f"Required file '{fname}' not found. Please download it from: {url}")
+        fpath = os.path.join(INPUT_DIR, fname)
+        if not os.path.exists(fpath):
+            logging.warning(f"Required file '{fpath}' not found. Please download it from: {url}")
 
 def find_std(data, period, start_date):
     df = data.copy()
@@ -84,7 +88,7 @@ def feature_engineering(data_processed, SnP, tickers):
 def main(args):
     check_and_warn_files()
     # Load tickers
-    tickers_csv = pd.read_csv('S&P500.csv')
+    tickers_csv = pd.read_csv(os.path.join(INPUT_DIR, 'S&P500.csv'))
     tickers = list(set(tickers_csv['Symbol']) - set(["BRK.B","BF.B","EMBC","CEG","OGN","CARR","OTIS","CTVA","MRNA","FOX","FOXA","DOW","CDAY","IR"]))
     # Download price data
     yf.pdr_override()
@@ -102,8 +106,8 @@ def main(args):
     cleaned = cleaned.drop(columns=["SnP Log Return","Close"], axis=1)
     cleaned = cleaned.sort_values(by=["Stock","Date"])
     # Market cap and risk-free
-    market_cap = pd.read_csv('market_cap.csv').astype('int64').iloc[0].to_dict()
-    riskfree = pd.read_csv('risk_free.csv')
+    market_cap = pd.read_csv(os.path.join(INPUT_DIR, 'market_cap.csv')).astype('int64').iloc[0].to_dict()
+    riskfree = pd.read_csv(os.path.join(INPUT_DIR, 'risk_free.csv'))
     # Prepare lists
     date_list = cleaned.index.drop_duplicates()
     stock_list = cleaned["Stock"].drop_duplicates()

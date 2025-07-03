@@ -29,16 +29,16 @@ pip install -r requirements.txt
 
 ## Data Download
 
-The following CSV files are required in the project directory:
-- `S&P500.csv` ([Download](https://drive.google.com/uc?export=download&id=1qLoKEZHEjqvjgBB1CFX62oh7IGJptAk7))
-- `market_cap.csv` ([Download](https://drive.google.com/uc?export=download&id=1YZmaQNzgpkj-DHbyFUhzzSDXKajabViF))
-- `risk_free.csv` ([Download](https://drive.google.com/uc?export=download&id=1KRYPKo4ZEZdbq0RCmIutu6n93FYAjQDN))
+The following CSV files are required in the `input` subfolder of the project directory:
+- `input/S&P500.csv` ([Download](https://drive.google.com/uc?export=download&id=1qLoKEZHEjqvjgBB1CFX62oh7IGJptAk7))
+- `input/market_cap.csv` ([Download](https://drive.google.com/uc?export=download&id=1YZmaQNzgpkj-DHbyFUhzzSDXKajabViF))
+- `input/risk_free.csv` ([Download](https://drive.google.com/uc?export=download&id=1KRYPKo4ZEZdbq0RCmIutu6n93FYAjQDN))
 
-Place these files in the same directory as `main.py`.
+Place these files in the `input` folder before running the script.
 
 ## How to Run
 
-1. Download the required CSVs (see above).
+1. Download the required CSVs (see above) and place them in the `input` folder.
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
@@ -55,7 +55,7 @@ Place these files in the same directory as `main.py`.
 ## Sample Input/Output
 
 **Input:** (default: last 252 trading days)
-- S&P500.csv, market_cap.csv, risk_free.csv in the working directory
+- S&P500.csv, market_cap.csv, risk_free.csv in the `input` folder
 
 **Output:**
 - Console output: cumulative returns, IR, and summary statistics
