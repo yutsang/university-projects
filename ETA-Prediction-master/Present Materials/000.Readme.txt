@@ -1,0 +1,29 @@
+Main Flow of Data Processing:
+
+#To skip the data processing part, only check "File 3" is ok
+
+File 1: "0.data_clean+separate+cal_optimized_v2.ipynb" - "Run All" supported, HK region, group the rows with the same routing, combine the traffic data from TomTom, weather data from NCEI, then output a csv file with basic calculation of time for each route
+
+File 2: "1.regression+modeling_v4.ipynb" - By using Random Forest and XGBoost, to train the model day by day. In each iteration, the trained model would be saved to same directory and read to predict for next day routing. Output for this file is a csv file with final prediction of ETA to be feeded into visualization.
+
+File 3: “main3_3.ipynb” or "main3_3.py" - Visualization by dash, reading the file called "intermediate_v2.csv" and map data "hongkong_speed.graphml" with speed data inside. After running the code, you could access the visualization via "http://127.0.0.1:8050/". Make sure you have click any rows in the shipment table to see the routing
+
+=====================================================================
+File Description (Intermediate/miscellaneous files) - The files listed below are not necessary for predicting the ETA
+
+File 4: "0.basic checking for the df.ipynb" - Check the min and max date for each files
+
+File 5: "0.hwy_speeds.ipynb" - Download speed data from Tomtom (Rush Hour: "tomtom_speeds_weekday_rush_hours.json"; Non-rush Hour: "tomtom_speeds_weekday_non_rush_hours.json") and merge the speed to HK Map, and saved to local as "hongkong_speed.graphml"
+
+File 6: "0.weather_merge_NCEI.ipynb" - Since NCEI uses weather station code to differentiate locations, for example, HKG is "45007", therefore, the weather data is downloaded manually and then put into this ipynb file to merge them together
+
+File 7: "1. model checking.ipynb" - Check the saved model and tune the parameters
+
+File 8: "2.one_function_map.ipynb" - Simply all code so that it is only one click to draw the route, preparing for the visualization part
+
+File 9: "3.basic_sorting_and_remove_duplicate.ipynb" - Try different sorting algorithm and logic for grouping some rows into routes
+
+=====================================================================
+File 10: "FYP-ETA-PREDICTION-PPT.pptx" - Presentation Slides
+
+File 11: "final report.pdf" - Final Written Report

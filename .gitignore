@@ -1,0 +1,7 @@
+#ETA-Prediction Project
+*.csv
+/ETA-Prediction-master/0.Preparation/*
+/ETA-Prediction-master/1.Data/*
+/ETA-Prediction-master/2.Coding Trials/.ipynb_checkpoints/*
+/ETA-Prediction-master/2.Coding Trials/cache/*
+
