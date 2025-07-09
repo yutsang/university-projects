@@ -81,6 +81,10 @@ coverage.xml
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*_assignment*.html  # Assignment HTML exports
+*Assignment*.html   # Assignment HTML exports  
+map.html           # Auto-generated map visualizations
+*.folium.html      # Folium map exports
 
 # IPython
 profile_default/
