@@ -13,6 +13,7 @@ For those interested in becoming AI Engineers or furthering their skills in the 
 - **Python Files**: For converted large notebooks, run `.py` files directly with Python:
   - `Capstone/Evaluating and Testing Pre-trained Models.py` - Pre-trained model evaluation (converted from large notebook)
   - `3.Intriduction to Computer Vision and Image Processing/Stop-sign-not-stop-sign-CNN.py` - CNN for stop sign detection (converted from large notebook)
+  - `Capstone/Week 2/2.1_data_loader_PyTorch.py` - PyTorch data loading and preprocessing (converted from large notebook)
 - Explore code, run cells/scripts, and review results for each course module or assignment.
 - Certificates and badges are in the `Certs/` folder for reference.
 
