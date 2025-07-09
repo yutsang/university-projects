@@ -11,9 +11,13 @@ For those interested in becoming AI Engineers or furthering their skills in the 
 
 - **Jupyter Notebooks**: Open `.ipynb` files in your preferred environment (Jupyter Notebook, JupyterLab, or VSCode).
 - **Python Files**: For converted large notebooks, run `.py` files directly with Python:
-  - `Capstone/Evaluating and Testing Pre-trained Models.py` - Pre-trained model evaluation (converted from large notebook)
-  - `3.Intriduction to Computer Vision and Image Processing/Stop-sign-not-stop-sign-CNN.py` - CNN for stop sign detection (converted from large notebook)
-  - `Capstone/Week 2/2.1_data_loader_PyTorch.py` - PyTorch data loading and preprocessing (converted from large notebook)
+  - `Capstone/Evaluating and Testing Pre-trained Models.py` - Pre-trained model evaluation (converted)
+  - `3.Intriduction to Computer Vision and Image Processing/Stop-sign-not-stop-sign-CNN.py` - CNN for stop sign detection (converted)
+  - `Capstone/Week 2/2.1_data_loader_PyTorch.py` - PyTorch data loading and preprocessing (converted)
+  - `Capstone/Week 1/1.0_load_and_display_data.py` - Data loading and display operations (converted)
+  - `Capstone/Week 4/Capstone-Project-with-Deep-Learning.py` - Deep learning capstone project (converted)
+  - `Capstone/Week 4/4.2 Resnet18_Assignment.py` - ResNet-18 assignment implementation (converted)
+  - `4.Deep Neural Networks with PyTorch/Coursera_DL0110EN_Honors.py` - PyTorch honors coursework (converted)
 - Explore code, run cells/scripts, and review results for each course module or assignment.
 - Certificates and badges are in the `Certs/` folder for reference.
 

@@ -28,7 +28,7 @@ This repository contains a collection of projects completed during university st
 - Each project folder contains its own README with setup and usage instructions.
 - Most projects are self-contained and can be run independently.
 - For code, data, and results, see the respective subfolder.
-- **Note**: Large Jupyter notebooks (>500KB) have been converted to Python files for better repository performance and reduced language statistics skew.
+- **Note**: Large Jupyter notebooks (>100KB) have been converted to Python files for optimal repository performance and accurate GitHub language statistics. 13 notebooks totaling ~12MB were converted to Python, achieving a 94% size reduction.
 
 ## Security & Academic Integrity
 - Do not share sensitive data or credentials. Remove or mask any real credentials before sharing code.
