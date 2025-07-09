@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
 import pandas as pd
 import dash
 from dash import dcc, html, Dash, dash_table, Input, Output
@@ -274,7 +280,8 @@ def update_shipment_details(filtered_table, active_cell):
     ), open('map.html', 'r').read() # return two values, respectively the output specified in call_back function header
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
+
 
 
 
