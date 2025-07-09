@@ -9,8 +9,11 @@ For those interested in becoming AI Engineers or furthering their skills in the 
 
 ## How to Use
 
-- Open Jupyter notebooks (`.ipynb`) in your preferred environment (Jupyter Notebook, JupyterLab, or VSCode).
-- Explore code, run cells, and review results for each course module or assignment.
+- **Jupyter Notebooks**: Open `.ipynb` files in your preferred environment (Jupyter Notebook, JupyterLab, or VSCode).
+- **Python Files**: For converted large notebooks, run `.py` files directly with Python:
+  - `Capstone/Evaluating and Testing Pre-trained Models.py` - Pre-trained model evaluation (converted from large notebook)
+  - `3.Intriduction to Computer Vision and Image Processing/Stop-sign-not-stop-sign-CNN.py` - CNN for stop sign detection (converted from large notebook)
+- Explore code, run cells/scripts, and review results for each course module or assignment.
 - Certificates and badges are in the `Certs/` folder for reference.
 
 ## Project Structure

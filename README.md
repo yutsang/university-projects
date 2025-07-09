@@ -28,6 +28,7 @@ This repository contains a collection of projects completed during university st
 - Each project folder contains its own README with setup and usage instructions.
 - Most projects are self-contained and can be run independently.
 - For code, data, and results, see the respective subfolder.
+- **Note**: Large Jupyter notebooks (>4MB) have been converted to Python files for better repository performance.
 
 ## Security & Academic Integrity
 - Do not share sensitive data or credentials. Remove or mask any real credentials before sharing code.
